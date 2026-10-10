@@ -4,7 +4,7 @@ st.title("🧠 KI-Lernspiel: Essen oder Trinken?")
 
 # 1. Speicher für die Wortlisten
 if "ess" not in st.session_state:
-    st.session_state.ess = [# --- Grundnahrungsmittel & Beilagen (15) ---
+    st.session_state.ess = [
     "apfel",
     "brot",
     "pizza",
@@ -112,11 +112,9 @@ if "ess" not in st.session_state:
     "bonbon",
     "müsli riegel",
 ]
-Einbindung in deinen Streamlit-Code:
-Ersetze in deinem Streamlit-Code einfach die Zeile zur Initialisierung:
 
-Python
-if "ess" not in st.session_state:
+
+
     st.session_state.ess = [
         "apfel",
         "brot",
